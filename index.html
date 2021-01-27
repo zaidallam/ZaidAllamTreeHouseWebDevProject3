@@ -47,7 +47,7 @@
             <option value="other">Other</option>  
           </select> 
           
-          <input type="text" name="other-job-role" id="other-job-role" class="other-job-role" placeholder="Other job role?">
+          <input style="display: none;" type="text" name="other-job-role" id="other-job-role" class="other-job-role" placeholder="Other job role?">
         </fieldset>
         
         <fieldset class="shirts">
@@ -75,7 +75,7 @@
 
             <div id="shirt-colors" class="shirt-colors">
               <label for="color">Color:</label>
-              <select id="color">
+              <select id="color" disabled>
                 <option selected hidden>Select a design theme above</option>
                 <option data-theme="js puns" value="cornflowerblue">Cornflower Blue (JS Puns shirt only)</option>
                 <option data-theme="js puns" value="darkslategrey">Dark Slate Grey (JS Puns shirt only)</option> 
@@ -151,7 +151,6 @@
         <div class="payment-method-box">
           <label for="payment">I'm going to pay with:</label>
           <select id="payment" name="user-payment">
-            <option value="select method" hidden>Select Payment Method</option>
             <option value="credit-card">Credit Card</option>
             <option value="paypal">PayPal</option>
             <option value="bitcoin">Bitcoin</option>
@@ -216,12 +215,12 @@
           </div>           	         
         </div>
 
-        <div id="paypal" class="paypal">
+        <div style="display: none" id="paypal" class="paypal">
           <h3>PayPal</h3>
         	<p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
         </div> 
 
-        <div id="bitcoin" class="bitcoin">
+        <div style="display: none" id="bitcoin" class="bitcoin">
           <h3>Bitcoin</h3>
         	<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
         </div>                  
